@@ -557,24 +557,6 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
 
-$\sqrt{\$4}$
-
-_____________________________________________________
-
-# Color
-
- `#ffffff`
-
- `#000000`
-
- #ffffff
-
-`#0969DA`
-
-`rgb(9, 105, 218)`
-
-`hsl(212, 92%, 45%)`
-
 _____________________________________________________
 
 # Not Support
