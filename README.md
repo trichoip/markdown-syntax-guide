@@ -408,6 +408,14 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
 _____________________________________________________
 
 # Task Lists
@@ -415,6 +423,10 @@ _____________________________________________________
 - [x] Write the press release
 - [x] Update the website
 - [ ] Contact the media
+- [ ] \(Optional) Open a followup issue
+- [ ] https://github.com/L-Briand/ShadowLayout/issues/8
+- [ ] https://github.com/lopspower/CircularImageView/issues/138
+- [ ] https://github.com/lopspower/CircularImageView/pull/140
 
 _____________________________________________________
 
@@ -425,6 +437,8 @@ _____________________________________________________
 :tent:
 
 :joy:
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 _____________________________________________________
 
@@ -468,15 +482,26 @@ _____________________________________________________
 
 [//]: # (These are reference links used in)
 
+<!-- TO DO: add more details about me later -->
+
 _____________________________________________________
 
-# Admonitions
+# Alerts
 
 > :warning: **Warning:** Do not push the big red button.
 
 > :memo: **Note:** Sunrises are beautiful.
 
 > :bulb: **Tip:** Remember to appreciate the little things in life.
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
 
 _____________________________________________________
 
@@ -528,9 +553,31 @@ _____________________________________________________
 
 # Mark
 
-$$
-f(x)
-$$
+$\sqrt{3x-1}+(1+x)^2$
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
+$\sqrt{\$4}$
+
+_____________________________________________________
+
+# Color
+
+ `#ffffff`
+
+ `#000000`
+
+ #ffffff
+
+`#0969DA`
+
+`rgb(9, 105, 218)`
+
+`hsl(212, 92%, 45%)`
 
 _____________________________________________________
 
@@ -548,9 +595,158 @@ Some of these words <ins>will be **underlined**</ins>.
 
 _____________________________________________________
 
+# collapsed section
+
+<details>
+  <summary>Click to expand!</summary>
+
+  ## heading
+  1. one
+  2. two
+  3. three
+
+| Rank | Languages  |
+| ---: | ---------- |
+|    1 | Javascript |
+|    2 | Python     |
+|    3 | SQL        |
+
+</details>
+
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+_____________________________________________________
+
+# Creating Mermaid diagrams
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,30],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+
+```topojson
+{
+  "type": "Topology",
+  "transform": {
+    "scale": [0.0005000500050005, 0.00010001000100010001],
+    "translate": [100, 0]
+  },
+  "objects": {
+    "example": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Point",
+          "properties": {"prop0": "value0"},
+          "coordinates": [4000, 5000]
+        },
+        {
+          "type": "LineString",
+          "properties": {"prop0": "value0", "prop1": 0},
+          "arcs": [0]
+        },
+        {
+          "type": "Polygon",
+          "properties": {"prop0": "value0",
+            "prop1": {"this": "that"}
+          },
+          "arcs": [[1]]
+        }
+      ]
+    }
+  },
+  "arcs": [[[4000, 0], [1999, 9999], [2000, -9999], [2000, 9999]],[[0, 0], [0, 9999], [2000, 0], [0, -9999], [-2000, 0]]]
+}
+```
+
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
+
+_____________________________________________________
+
 ![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)
 
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 _____________________________________________________
 
@@ -565,4 +761,3 @@ _____________________________________________________
     `{ my code }`
 
     Add as many paragraphs as you like.
-
