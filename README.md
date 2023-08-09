@@ -423,9 +423,6 @@ _____________________________________________________
 - [x] Write the press release
 - [x] Update the website
 - [ ] Contact the media
-- [ ] \(https://github.com/lopspower/CircularImageView/pull/140) Open a followup issue
-- [x] https://github.com/L-Briand/ShadowLayout/issues/8
-- [x] https://github.com/lopspower/CircularImageView/issues/138
 
 _____________________________________________________
 
@@ -513,7 +510,7 @@ _____________________________________________________
     <figcaption>A single track trail outside of Albuquerque, New Mexico.<figcaption>
 </figure>
 
-![Albuquerque, New Mexico](/assets/images/linux.jpg)
+![Albuquerque, New Mexico](/assets/images/linux.jpg)  
 *A single track trail outside of Albuquerque, New Mexico.*
 
 _____________________________________________________
