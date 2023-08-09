@@ -423,10 +423,9 @@ _____________________________________________________
 - [x] Write the press release
 - [x] Update the website
 - [ ] Contact the media
-- [ ] \(Optional) Open a followup issue
-- [ ] https://github.com/L-Briand/ShadowLayout/issues/8
-- [ ] https://github.com/lopspower/CircularImageView/issues/138
-- [ ] https://github.com/lopspower/CircularImageView/pull/140
+- [ ] \(https://github.com/lopspower/CircularImageView/pull/140) Open a followup issue
+- [x] https://github.com/L-Briand/ShadowLayout/issues/8
+- [x] https://github.com/lopspower/CircularImageView/issues/138
 
 _____________________________________________________
 
